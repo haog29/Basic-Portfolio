@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Harley's Wire Frame</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#container {
+    display:grid;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(79, 73, 172);
+    padding: 1px;
+    text-align: center;
+    font-size: 21px;
+    color: white
+}
+
+
+nav {
+
+    width: 100%;
+    height: 90px;
+    background: rgb(83, 192, 255);
+    padding: 30px;
+}
+img {
+    height :100px;
+    width : 100px;
+    float: left;
+
+}
+.active {
+      background-color: #4aaaa5;
+      padding: 8px;
+      margin: 10px;
+    }
+nav ul {
+  list-style-type:none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+
+}
+nav li {
+    float:right;
+}
+nav li a {
+      display: block;
+      color: #1d1616;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+article {
+    float: left;
+    padding: 33px;
+    width: 50%;
+    background-color: #f1f1f1;
+    height: 300px;
+}
+
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+aside {
+    float:right;
+    float: left;
+    padding: 33px;
+    width: 50%;
+    background-color: #ff66ba;
+    height: 300px;
+
+}
+
+
+footer {
+  background-color: rgb(62, 44, 165);
+  padding: 25px;
+  text-align: center;
+  color: white;
+}
+
+#bio-image {
+    padding:10px;
+}
+
+
+
+@media (max-width: 600px) {
+  nav, article, aside {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<nav>
+  <ul>
+    <li><a href="#">About Me</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Contact</a></li>
+    <li style="float:left" ><a class="active" href="#about">Harley Gagaring</a></li>
+  </ul>
+</nav>
+
+<div id = "container">
+<section>
+  
+ 
+  <article>
+
+    <h1>About</h1>
+    <img id="bio-image" src="hao.jpg" alt="Harley">
+    <h4>Visit my website to know more about me : 
+        <a href="http://www.haoppydays.wixsite.com/comein">www.haoppydays,wixsite.com/comein</a></h4>
+  <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Alias facere harum repellendus nostrum a recusandae blanditiis in rerum, deleniti voluptates fuga quisquam quam, 
+    magni nobis commodi quo tempore dicta amet? </p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Nobis nostrum quis, magni numquam sunt quaerat ab dolore! Unde quibusdam
+     quasi voluptates aliquid tempora pariatur ad voluptate numquam repellendus quis! Facere!</p>
+  </article>
+  <aside>
+        <p> Aside ipsum dolor sit amet consectetur adipisicing elit. 
+            Adipisci tempora eligendi repudiandae quaerat ad odit autem sed deleniti veniam, 
+            ullam reiciendis cupiditate doloremque fuga illo quibusdam molestias 
+            voluptate iure cum!</p>
+    </aside>
+  
+</section>
+</div>
+
+<footer>
+  
+</footer>
+
+</body>
+</html>

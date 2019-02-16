@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 1fr;
+
+    }
+
+    .active {
+      padding: 10px;
+      margin: 10px;
+
+    }
+
+    .me {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr;
+      height: 300px;
+      margin: 400px;
+      background-color: #dddddd;
+
+    }
+
+    body {
+      background-color: #ffffff;
+    }
+
+    h2 {
+      color: #4aaaa5;
+      border-bottom: solid #cccccc;
+      grid-template-columns: 2fr;
+
+    }
+
+    img {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+      width: 148px;
+      height: 159px;
+      display: grid;
+      grid-column: 1 / span 2;
+      grid-row: 3 / span 1;
+    }
+    img, body {
+      float: left;
+    }
+    body {
+    background: #efeee7;
+    font-family: Georgia,'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 150%;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+    p {
+      grid-column: 2 / span 2;
+      grid-row: 1 / span 1;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #ccc5c5;
+    }
+
+    li {
+      float: right;
+    }
+
+    li a {
+      display: block;
+      color: #1d1616;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #777777;
+    }
+
+    .active {
+      background-color: #4aaaa5;
+      padding: 10px;
+      margin: 10px;
+    }
+    nav {
+
+    }
+
+    #home,
+    #portfolio,
+   
+      {
+      color: #777777;
+    }
+    .link{
+      display: grid;
+      grid-template-columns: 1 / span 2;
+      grid-row: 10 / span 5;
+    }
+
+    .info {
+      float : left;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <ul>
+      <li><a href="#home">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+
+      <li style="float:left"><a class="active" href="#about">Harley</a></li>
+    </ul>
+  </div>
+
+  <div id="me">
+    <h2>About Me:</h2>
+
+    <img src="hao.jpg" alt="Harley">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      Numquam impedit, distinctio magni voluptate voluptates libero similique,
+      maiores rem,
+      est facilis inventore consectetur quo ab illum optio.
+      Laudantium aut voluptatem neque!</p>
+      <section class="info">
+          <p>Visit my website to know more about me : </p>
+      </section>
+
+
+  </div>
+  
+  <div class = "link">
+      <p>Visit my website to know more about me : 
+        <a href="http://www.haoppydays.wixsite.com/comein">www.haoppydays,wixsite.com/comein</a></p>
+  </div>
+</body>
+
+</html>
