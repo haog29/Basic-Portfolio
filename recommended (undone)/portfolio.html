@@ -1,60 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Harley's Wire Frame</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-#container {
-    display:grid;
-}
+  <title>Portfolio</title>
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-header {
-    background-color: rgb(79, 73, 172);
-    padding: 1px;
-    text-align: center;
-    font-size: 21px;
-    color: white
-}
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
 
-nav {
 
-    width: 100%;
-    height: 90px;
-    background: rgb(83, 192, 255);
-    padding: 30px;
-}
-img {
-    height :100px;
-    width : 100px;
-    float: left;
 
-}
-.active {
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(255, 182, 231);
+    }
+
+    header {
+      background-color: rgb(79, 73, 172);
+      padding: 1px;
+      text-align: center;
+      font-size: 21px;
+      color: white
+    }
+
+
+    nav {
+
+      width: 100%;
+      height: 90px;
+      background: rgb(83, 192, 255);
+      padding: 30px;
+    }
+
+    img {
+      height: 100px;
+      width: 100px;
+      float: left;
+      padding: 50px;
+
+    }
+
+    .active {
       background-color: #4aaaa5;
       padding: 8px;
       margin: 10px;
     }
-nav ul {
-  list-style-type:none;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
 
-}
-nav li {
-    float:right;
-}
-nav li a {
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+
+    }
+
+    nav li {
+      float: right;
+    }
+
+    nav li a {
       display: block;
       color: #1d1616;
       text-align: center;
@@ -62,93 +72,137 @@ nav li a {
       text-decoration: none;
     }
 
-article {
-    float: left;
-    padding: 33px;
-    width: 50%;
-    background-color: #f1f1f1;
-    height: 300px;
-}
+    h1 {
+      border-bottom: solid black;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    section {
+      margin: 27px 20px 100px 20px;
 
 
-section:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    }
 
-aside {
-    float:right;
-    float: left;
-    padding: 33px;
-    width: 50%;
-    background-color: #ff66ba;
-    height: 300px;
+    section:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-}
+    article {
 
+      padding: 33px;
+      width: 100%;
+      background-color: #528dcc;
+      height: 642px;
 
-footer {
-  background-color: rgb(62, 44, 165);
-  padding: 25px;
-  text-align: center;
-  color: white;
-}
-
-#bio-image {
-    padding:10px;
-}
+    }
 
 
 
-@media (max-width: 600px) {
-  nav, article, aside {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
+
+    .bt21 {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .bt21 img {
+      width: 100%;
+      height: auto;
+    }
+
+    .bt21 .btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-169%, 312%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #555;
+      color: white;
+      font-size: 11px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px
+    }
+
+    .bt21 .btn:hover {
+      background-color: black;
+    }
+
+
+
+
+
+
+
+
+
+
+    footer {
+      background-color: rgb(62, 44, 165);
+      padding: 25px;
+      text-align: center;
+      border: solid #1d1616;
+
+
+    }
+
+
+    @media (max-width: 600px) {
+
+      nav,
+      footer {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<nav>
-  <ul>
-    <li><a href="#">About Me</a></li>
-    <li><a href="#">Portfolio</a></li>
-    <li><a href="#">Contact</a></li>
-    <li style="float:left" ><a class="active" href="#about">Harley Gagaring</a></li>
-  </ul>
-</nav>
 
-<div id = "container">
-<section>
-  
- 
-  <article>
+  <nav>
+    <ul>
+      <li><a href="./recommended (undone)/contact.html">Contact</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="index.html">About Me</a></li>
 
-    <h1>About</h1>
-    <img id="bio-image" src="hao.jpg" alt="Harley">
-    <h4>Visit my website to know more about me : 
-        <a href="http://www.haoppydays.wixsite.com/comein">www.haoppydays,wixsite.com/comein</a></h4>
-  <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-    Alias facere harum repellendus nostrum a recusandae blanditiis in rerum, deleniti voluptates fuga quisquam quam, 
-    magni nobis commodi quo tempore dicta amet? </p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-    Nobis nostrum quis, magni numquam sunt quaerat ab dolore! Unde quibusdam
-     quasi voluptates aliquid tempora pariatur ad voluptate numquam repellendus quis! Facere!</p>
-  </article>
-  <aside>
-        <p> Aside ipsum dolor sit amet consectetur adipisicing elit. 
-            Adipisci tempora eligendi repudiandae quaerat ad odit autem sed deleniti veniam, 
-            ullam reiciendis cupiditate doloremque fuga illo quibusdam molestias 
-            voluptate iure cum!</p>
-    </aside>
-  
-</section>
-</div>
+      <li style="float:left"><a class="active" href="#href">Harley Gagaring</a></li>
+    </ul>
+  </nav>
 
-<footer>
-  
-</footer>
+  <div id="container">
+    <section>
+
+
+      <article>
+
+        <h1>Portfolio</h1>
+
+        <div class="bt21">
+          <div class="row">
+            <img src="shooky.jpg" alt="shooky" style="width:50%">
+            <button class="btn">shooky</button>
+          </div>
+
+          <div class="row">
+              <img src="tata.jpg" alt="tata" style="width:50%">
+              <button class="btn">shooky</button>
+            </div>
+
+        </div>
+
+      </article>
+
+
+
+    </section>
+  </div>
+
+  <footer></footer>
 
 </body>
+
 </html>
